@@ -46,15 +46,35 @@ def f():
 ##############################
 
 # Define a function named add that takes two numbers and returns the sum.
+def add(a,b):
+	"""Returns the sum of two given numbers"""
+	sum = a + b
+	return sum
 
 # Define a function named to_tuple that takes three arguments and returns a
 # tuple of these three arguments.
+def to_tuple(arg1, arg2, arg3):
+	"""Returns a tuple of arguments"""
+	tuple = (arg1, arg2, arg3)
+	return tuple
 
 # Define a function named check5 that checks if a number is greater than 5 and
 # returns True or False.
+def check5(a):
+	"""Checks if number is greater than 5 and returns True or False"""
+	if (a>5):
+		return True
+	else:
+		return False
 
-# Define a function named check_n that check is a number is greater than n. The
+# Define a function named check_n that checks if a number is greater than n. The
 # number should be the first argument and n the second
+def check_n(num, n):
+	"""Checks if a given number is greater than another"""
+	if (num > n):
+		return True
+	else:
+		return False
 
 #########
 # LISTS #
@@ -65,10 +85,16 @@ def f():
 # compare against. The function should return a list with equal length as the
 # input list containing for each number in the original list either True or
 # False if the number was greater than or equal to n.
+def check_list(list, n):
+	result = [x >= n for x in list]
+	return result
 
 # Define a function named check_list_nth that does the same as check_list but
 # uses every nth element of the input list (including the first one). You will
 # need a third input argument.
+def check_list_nth(list, n, nth):
+	result = [x >= n for x in list[0::nth]]
+	return result
 
 # Define a function named add_new_list that takes two inputs. A list l and a
 # second variable x to add to the list. Return a new list containing x as the
