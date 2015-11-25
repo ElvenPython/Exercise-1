@@ -198,12 +198,12 @@ def add_new_list(l, x):
 		
 	Returns
 	-------
-	l : list
+	lnew : list
 		New list with added element.
 	"""
 	lnew = l.copy()
 	lnew.append(x)
-	return l	
+	return lnew	
 
 # Define a function named remove_nth that takes a list and removes every nth
 # element (including the first one). Use a keyword named nth to set the default
